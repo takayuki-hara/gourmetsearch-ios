@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9E41B94CAB6D37FE471266 /* Pods_gourmetsearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */; };
 		4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2EE210DB51A00C6BA72 /* Main.storyboard */; };
 		4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F1210DB51C00C6BA72 /* Assets.xcassets */; };
 		4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */; };
 		4658D300210DB51C00C6BA72 /* gourmetsearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D2FF210DB51C00C6BA72 /* gourmetsearchTests.swift */; };
 		4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D319210DC33D00C6BA72 /* ViewController.swift */; };
 		4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D31B210DC33D00C6BA72 /* AppDelegate.swift */; };
+		4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */; };
+		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.release.xcconfig"; sourceTree = "<group>"; };
+		24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.debug.xcconfig"; sourceTree = "<group>"; };
 		4658D2E7210DB51A00C6BA72 /* gourmetsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gourmetsearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4658D2EF210DB51A00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4658D2F1210DB51C00C6BA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		4658D30B210DC33D00C6BA72 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4658D319210DC33D00C6BA72 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4658D31B210DC33D00C6BA72 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverUtil.swift; sourceTree = "<group>"; };
+		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9E41B94CAB6D37FE471266 /* Pods_gourmetsearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F224F903FA01E1A748F7865 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */,
+				18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */,
+				B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */,
+				4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4658D2DE210DB51A00C6BA72 = {
 			isa = PBXGroup;
 			children = (
 				4658D2E9210DB51A00C6BA72 /* gourmetsearch */,
 				4658D2FE210DB51C00C6BA72 /* gourmetsearchTests */,
 				4658D2E8210DB51A00C6BA72 /* Products */,
+				0F224F903FA01E1A748F7865 /* Pods */,
+				83EC8D2A08A8297A1509D321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +177,7 @@
 		4658D311210DC33D00C6BA72 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4658D328210DCB4200C6BA72 /* SwiftyBeaver */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -288,6 +314,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4658D328210DCB4200C6BA72 /* SwiftyBeaver */ = {
+			isa = PBXGroup;
+			children = (
+				4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */,
+			);
+			path = SwiftyBeaver;
+			sourceTree = "<group>";
+		};
+		83EC8D2A08A8297A1509D321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */,
+				A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,9 +338,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4658D304210DB51D00C6BA72 /* Build configuration list for PBXNativeTarget "gourmetsearch" */;
 			buildPhases = (
+				C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */,
 				4658D2E3210DB51A00C6BA72 /* Sources */,
 				4658D2E4210DB51A00C6BA72 /* Frameworks */,
 				4658D2E5210DB51A00C6BA72 /* Resources */,
+				E6A73EED9959D4BA362AFF44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +357,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4658D307210DB51D00C6BA72 /* Build configuration list for PBXNativeTarget "gourmetsearchTests" */;
 			buildPhases = (
+				CDA675F699FB43A5F59B09A8 /* [CP] Check Pods Manifest.lock */,
 				4658D2F7210DB51C00C6BA72 /* Sources */,
 				4658D2F8210DB51C00C6BA72 /* Frameworks */,
 				4658D2F9210DB51C00C6BA72 /* Resources */,
@@ -334,7 +380,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = TakayukiHARA;
+				ORGANIZATIONNAME = Penguin;
 				TargetAttributes = {
 					4658D2E6210DB51A00C6BA72 = {
 						CreatedOnToolsVersion = 9.3;
@@ -384,12 +430,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gourmetsearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA675F699FB43A5F59B09A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gourmetsearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A73EED9959D4BA362AFF44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4658D2E3210DB51A00C6BA72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */,
+				4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */,
 				4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +652,7 @@
 		};
 		4658D305210DB51D00C6BA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,7 +661,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.takayuki.hara.gourmetsearch;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,6 +670,7 @@
 		};
 		4658D306210DB51D00C6BA72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,7 +679,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.takayuki.hara.gourmetsearch;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,6 +688,7 @@
 		};
 		4658D308210DB51D00C6BA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,7 +699,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.takayuki.hara.gourmetsearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,6 +709,7 @@
 		};
 		4658D309210DB51D00C6BA72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -612,7 +720,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.takayuki.hara.gourmetsearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
