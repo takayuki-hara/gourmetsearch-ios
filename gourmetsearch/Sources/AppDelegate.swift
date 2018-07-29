@@ -3,7 +3,7 @@
 //  gourmetsearch
 //
 //  Created by 原隆幸 on 2018/07/29.
-//  Copyright © 2018年 TakayukiHARA. All rights reserved.
+//  Copyright © 2018年 Penguin. All rights reserved.
 //
 
 import UIKit
