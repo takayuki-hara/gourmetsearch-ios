@@ -1,0 +1,13 @@
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 1.8.3
+
+name: SwiftyBeaver, nameSpecified: 
+body: The MIT License (MIT…
+version: 1.6.0
+
+add-version-numbers: false
+
+LicensePlist Version: 1.8.3

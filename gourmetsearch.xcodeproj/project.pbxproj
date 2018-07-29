@@ -15,6 +15,7 @@
 		4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D319210DC33D00C6BA72 /* ViewController.swift */; };
 		4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D31B210DC33D00C6BA72 /* AppDelegate.swift */; };
 		4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */; };
+		4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4658D32B210DFD2B00C6BA72 /* Settings.bundle */; };
 		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		4658D319210DC33D00C6BA72 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4658D31B210DC33D00C6BA72 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverUtil.swift; sourceTree = "<group>"; };
+		4658D32B210DFD2B00C6BA72 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				4658D30B210DC33D00C6BA72 /* Info.plist */,
+				4658D32B210DFD2B00C6BA72 /* Settings.bundle */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			buildConfigurationList = 4658D304210DB51D00C6BA72 /* Build configuration list for PBXNativeTarget "gourmetsearch" */;
 			buildPhases = (
 				C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */,
+				4658D32E210DFE2200C6BA72 /* ShellScript */,
 				4658D2E3210DB51A00C6BA72 /* Sources */,
 				4658D2E4210DB51A00C6BA72 /* Frameworks */,
 				4658D2E5210DB51A00C6BA72 /* Resources */,
@@ -415,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */,
 				4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */,
 				4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */,
 				4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */,
@@ -431,6 +436,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4658D32E210DFE2200C6BA72 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# LicensePlist\nif [ $CONFIGURATION = \"Debug\" ]; then\n    ${PODS_ROOT}/LicensePlist/license-plist --output-path \"$PRODUCT_NAME/Supporting Files/Settings.bundle\"\nfi";
+		};
 		C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
