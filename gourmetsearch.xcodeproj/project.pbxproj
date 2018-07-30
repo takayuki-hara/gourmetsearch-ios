@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.release.xcconfig"; sourceTree = "<group>"; };
 		24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.debug.xcconfig"; sourceTree = "<group>"; };
-		4658D2E7210DB51A00C6BA72 /* gourmetsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gourmetsearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[dev]gourmetsearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4658D2EF210DB51A00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4658D2F1210DB51C00C6BA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4658D2F4210DB51C00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		4658D2E8210DB51A00C6BA72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4658D2E7210DB51A00C6BA72 /* gourmetsearch.app */,
+				4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */,
 				4658D2FB210DB51C00C6BA72 /* gourmetsearchTests.xctest */,
 			);
 			name = Products;
@@ -357,7 +357,7 @@
 			);
 			name = gourmetsearch;
 			productName = gourmetsearch;
-			productReference = 4658D2E7210DB51A00C6BA72 /* gourmetsearch.app */;
+			productReference = 4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4658D2FA210DB51C00C6BA72 /* gourmetsearchTests */ = {
@@ -685,8 +685,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearch.dev;
+				PRODUCT_NAME = "[dev]$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
