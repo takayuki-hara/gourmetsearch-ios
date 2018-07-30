@@ -17,7 +17,6 @@
 		4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F1210DB51C00C6BA72 /* Assets.xcassets */; };
 		4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */; };
 		4658D300210DB51C00C6BA72 /* gourmetsearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D2FF210DB51C00C6BA72 /* gourmetsearchTests.swift */; };
-		4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D319210DC33D00C6BA72 /* ViewController.swift */; };
 		4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D31B210DC33D00C6BA72 /* AppDelegate.swift */; };
 		4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */; };
 		4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4658D32B210DFD2B00C6BA72 /* Settings.bundle */; };
@@ -51,7 +50,6 @@
 		4658D2FF210DB51C00C6BA72 /* gourmetsearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gourmetsearchTests.swift; sourceTree = "<group>"; };
 		4658D301210DB51D00C6BA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4658D30B210DC33D00C6BA72 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4658D319210DC33D00C6BA72 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4658D31B210DC33D00C6BA72 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverUtil.swift; sourceTree = "<group>"; };
 		4658D32B210DFD2B00C6BA72 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -259,7 +257,6 @@
 		4658D318210DC33D00C6BA72 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4658D319210DC33D00C6BA72 /* ViewController.swift */,
 				464058F2210F1796005A4991 /* SearchViewController.swift */,
 				464058F4210F182D005A4991 /* MyPageViewController.swift */,
 				464058F6210F1837005A4991 /* SettingViewController.swift */,
@@ -601,7 +598,6 @@
 				464058F5210F182D005A4991 /* MyPageViewController.swift in Sources */,
 				464058F7210F1837005A4991 /* SettingViewController.swift in Sources */,
 				4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */,
-				4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */,
 				46928B8F210E93FA0059B41F /* R.generated.swift in Sources */,
 				464058EC210EE036005A4991 /* SwiftyUserDefaultsUtil.swift in Sources */,
 			);
