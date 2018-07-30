@@ -41,3 +41,12 @@ $ tail -f /tmp/swiftybeaver/gourmetsearch.log
 FirebaseConfiguration.shared.setLoggerLevel(.info)
 FirebaseApp.configure()
 ```
+
+## Memo
+
+### LaunchScreenについて
+
+- 初期のLaunchScreenに独自のViewControllerは設定できない
+- 任意のStoryboardに変更できる（設定しないこともできる）
+- LaunchScreenになっているViewControllerは処理されない？？
+- 結局、ロゴくらいにしておくべきで、画面切り替え処理なども行うべきでない
