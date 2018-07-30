@@ -11,7 +11,6 @@
 		464058E7210EBD1C005A4991 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */; };
 		464058E8210EBD1C005A4991 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */; };
 		464058EC210EE036005A4991 /* SwiftyUserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */; };
-		4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2EE210DB51A00C6BA72 /* Main.storyboard */; };
 		4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F1210DB51C00C6BA72 /* Assets.xcassets */; };
 		4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */; };
 		4658D300210DB51C00C6BA72 /* gourmetsearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D2FF210DB51C00C6BA72 /* gourmetsearchTests.swift */; };
@@ -40,7 +39,6 @@
 		464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsUtil.swift; sourceTree = "<group>"; };
 		4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[dev]gourmetsearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4658D2EF210DB51A00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4658D2F1210DB51C00C6BA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4658D2F4210DB51C00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4658D2FB210DB51C00C6BA72 /* gourmetsearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gourmetsearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +121,6 @@
 				4658D30C210DC33D00C6BA72 /* Sources */,
 				4658D324210DC33D00C6BA72 /* Resources */,
 				4658D30A210DC33D00C6BA72 /* Supporting Files */,
-				4658D2EE210DB51A00C6BA72 /* Main.storyboard */,
 				4658D2F1210DB51C00C6BA72 /* Assets.xcassets */,
 				4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */,
 			);
@@ -445,7 +442,6 @@
 				4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */,
 				4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */,
 				4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */,
-				4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */,
 				464058E8210EBD1C005A4991 /* GoogleService-Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,14 +614,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4658D2EE210DB51A00C6BA72 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4658D2EF210DB51A00C6BA72 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

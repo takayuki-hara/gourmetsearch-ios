@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // for debug
+        let label = UILabel()
+        label.text = "aaaaa"
+        view.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.center.equalTo(view)
+            make.size.equalTo(CGSize(width: 100, height: 100))
+        }
     }
 
     override func didReceiveMemoryWarning() {

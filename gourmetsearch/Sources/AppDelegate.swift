@@ -28,6 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaultsUtil.debugPrintAllUserDefaults()
         UserDefaultsUtil.incrementLaunchCount()
 
+        // Window Setting
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let vc: ViewController = ViewController()
+        self.window!.rootViewController = vc
+        self.window!.backgroundColor = UIColor.white
+        self.window!.makeKeyAndVisible()
+
         return true
     }
 
