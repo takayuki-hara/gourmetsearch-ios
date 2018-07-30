@@ -20,8 +20,8 @@ target 'gourmetsearch' do
   pod 'Crashlytics'
 
   # File Format
-  # pod 'Unbox'
-  # pod 'Wrap'
+   pod 'Unbox'
+   pod 'Wrap'
 
   # Font & String
   # pod 'BonMot'
