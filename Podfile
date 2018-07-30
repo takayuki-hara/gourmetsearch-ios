@@ -24,8 +24,8 @@ target 'gourmetsearch' do
    pod 'Wrap'
 
   # Font & String
-  # pod 'BonMot'
-  # pod 'FontAwesomeKit'
+   pod 'BonMot'
+   pod 'FontAwesomeKit'
 
   # Networking
   # pod 'ReachabilitySwift'

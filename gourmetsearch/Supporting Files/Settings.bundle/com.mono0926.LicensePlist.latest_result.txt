@@ -1,3 +1,7 @@
+name: BonMot, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.2
+
 name: Crashlytics, nameSpecified: 
 body: Fabric: Copyright 20…
 version: 3.10.5
@@ -22,6 +26,10 @@ version: 5.0.6
 name: FirebaseInstanceID, nameSpecified: 
 body: Copyright 2018 Googl…
 version: 3.1.1
+
+name: FontAwesomeKit, nameSpecified: 
+body: Copyright (C) 2013 P…
+version: 2.2.1
 
 name: GoogleToolboxForMac, nameSpecified: 
 body: 
