@@ -775,7 +775,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gourmetsearch.app/gourmetsearch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[dev]gourmetsearch.app/[dev]gourmetsearch";
 			};
 			name = Debug;
 		};
