@@ -20,12 +20,12 @@ target 'gourmetsearch' do
   pod 'Crashlytics'
 
   # File Format
-   pod 'Unbox'
-   pod 'Wrap'
+  pod 'Unbox'
+  pod 'Wrap'
 
   # Font & String
-   pod 'BonMot'
-   pod 'FontAwesomeKit'
+  pod 'BonMot'
+  pod 'FontAwesomeKit'
 
   # Networking
   # pod 'ReachabilitySwift'
@@ -33,7 +33,7 @@ target 'gourmetsearch' do
   # pod 'Kingfisher'
 
   # Database
-   pod 'SwiftyUserDefaults'
+  pod 'SwiftyUserDefaults'
   # pod 'RealmSwift'
   # pod 'KeychainAccess'
 
@@ -43,7 +43,7 @@ target 'gourmetsearch' do
   # pod 'AsyncSwift'
 
   # UI
-  # pod 'SnapKit'
+  pod 'SnapKit'
   # pod 'XLPagerTabStrip'
 
   # Other
