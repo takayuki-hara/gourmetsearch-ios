@@ -30,6 +30,7 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - Reveal-SDK (16)
   - SwiftLint (0.26.0)
   - SwiftyBeaver (1.6.0)
 
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - Nimble
   - Quick
   - R.swift
+  - Reveal-SDK
   - SwiftLint
   - SwiftyBeaver
 
@@ -59,6 +61,7 @@ SPEC REPOS:
     - Quick
     - R.swift
     - R.swift.Library
+    - Reveal-SDK
     - SwiftLint
     - SwiftyBeaver
 
@@ -76,9 +79,10 @@ SPEC CHECKSUMS:
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Reveal-SDK: ed36bdbb3cbf90b94ae5da0dbcb3c7ae6738c51f
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
 
-PODFILE CHECKSUM: 9f0f2a9026fe9c97886c320b1222f1f56006b71c
+PODFILE CHECKSUM: d73d1bd069f1e6c5c45a3713fc87d029f4245d46
 
 COCOAPODS: 1.5.3

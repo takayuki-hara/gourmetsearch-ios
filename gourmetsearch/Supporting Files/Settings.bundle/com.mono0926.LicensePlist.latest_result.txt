@@ -56,6 +56,10 @@ name: R.swift.Library, nameSpecified:
 body: The MIT License (MIT…
 version: 4.0.0
 
+name: Reveal-SDK, nameSpecified: 
+body: # REVEAL LICENSE AGR…
+version: 16
+
 name: SwiftLint, nameSpecified: 
 body: The MIT License (MIT…
 version: 0.26.0

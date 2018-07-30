@@ -12,7 +12,7 @@ target 'gourmetsearch' do
   # Develop & Debug
   pod 'SwiftyBeaver'
   pod 'SwiftLint'
-  # pod 'Reveal-SDK', :configurations => ['Debug']
+  pod 'Reveal-SDK', :configurations => ['Debug']
 
   # Firebase
   pod 'Firebase/Core'
