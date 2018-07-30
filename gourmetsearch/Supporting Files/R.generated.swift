@@ -56,8 +56,51 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 6 images.
   struct image {
+    /// Image `breakfast`.
+    static let breakfast = Rswift.ImageResource(bundle: R.hostingBundle, name: "breakfast")
+    /// Image `chukagai1`.
+    static let chukagai1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "chukagai1")
+    /// Image `chukagai2`.
+    static let chukagai2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "chukagai2")
+    /// Image `chukagai3`.
+    static let chukagai3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "chukagai3")
+    /// Image `smoothie`.
+    static let smoothie = Rswift.ImageResource(bundle: R.hostingBundle, name: "smoothie")
+    /// Image `sushi`.
+    static let sushi = Rswift.ImageResource(bundle: R.hostingBundle, name: "sushi")
+    
+    /// `UIImage(named: "breakfast", bundle: ..., traitCollection: ...)`
+    static func breakfast(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.breakfast, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "chukagai1", bundle: ..., traitCollection: ...)`
+    static func chukagai1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.chukagai1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "chukagai2", bundle: ..., traitCollection: ...)`
+    static func chukagai2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.chukagai2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "chukagai3", bundle: ..., traitCollection: ...)`
+    static func chukagai3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.chukagai3, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "smoothie", bundle: ..., traitCollection: ...)`
+    static func smoothie(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.smoothie, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "sushi", bundle: ..., traitCollection: ...)`
+    static func sushi(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.sushi, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
