@@ -9,6 +9,7 @@ target 'gourmetsearch' do
   pod 'SwiftyBeaver'
   pod 'LicensePlist'
   pod 'R.swift'
+  pod 'SwiftLint'
 
   target 'gourmetsearchTests' do
     inherit! :search_paths

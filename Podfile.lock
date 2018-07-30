@@ -3,11 +3,13 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - SwiftLint (0.26.0)
   - SwiftyBeaver (1.6.0)
 
 DEPENDENCIES:
   - LicensePlist
   - R.swift
+  - SwiftLint
   - SwiftyBeaver
 
 SPEC REPOS:
@@ -15,14 +17,16 @@ SPEC REPOS:
     - LicensePlist
     - R.swift
     - R.swift.Library
+    - SwiftLint
     - SwiftyBeaver
 
 SPEC CHECKSUMS:
   LicensePlist: 3fda61ebe060afc8fc6d995df34a91401af5a244
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
 
-PODFILE CHECKSUM: ffdb975e0d837e06b72c8bf8b9a2400f7ede3143
+PODFILE CHECKSUM: a59ef001d164c56d893f2027abd8deb4c94cfbf6
 
 COCOAPODS: 1.5.3
