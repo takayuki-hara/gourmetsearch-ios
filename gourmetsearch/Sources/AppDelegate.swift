@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // SwiftyBeaverの初期化
         SwiftyBeaverUtil.initialize()
         log.info("LogFile:" + SwiftyBeaverUtil.logfilePath())
+
+        // Firebase
+        FirebaseConfiguration.shared.setLoggerLevel(.info)
+        FirebaseApp.configure()
 
         return true
     }

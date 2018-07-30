@@ -21,10 +21,26 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
+    /// Resource file `GoogleService-Info-Debug.plist`.
+    static let googleServiceInfoDebugPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info-Debug", pathExtension: "plist")
+    /// Resource file `GoogleService-Info-Release.plist`.
+    static let googleServiceInfoReleasePlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info-Release", pathExtension: "plist")
     /// Resource file `Settings.bundle`.
     static let settingsBundle = Rswift.FileResource(bundle: R.hostingBundle, name: "Settings", pathExtension: "bundle")
+    
+    /// `bundle.url(forResource: "GoogleService-Info-Debug", withExtension: "plist")`
+    static func googleServiceInfoDebugPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoDebugPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "GoogleService-Info-Release", withExtension: "plist")`
+    static func googleServiceInfoReleasePlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoReleasePlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "Settings", withExtension: "bundle")`
     static func settingsBundle(_: Void = ()) -> Foundation.URL? {

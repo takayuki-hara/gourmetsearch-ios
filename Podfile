@@ -7,9 +7,14 @@ target 'gourmetsearch' do
 
   # Pods for gourmetsearch
   pod 'SwiftyBeaver'
+  pod 'SwiftLint'
   pod 'LicensePlist'
   pod 'R.swift'
-  pod 'SwiftLint'
+
+  # Firebase
+  pod 'Firebase/Core'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'gourmetsearchTests' do
     inherit! :search_paths

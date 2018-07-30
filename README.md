@@ -22,3 +22,22 @@ $ tail -f /tmp/swiftybeaver/gourmetsearch.log
 - appID : v6gbNz
 - appSecret : pZsdmelj5nis5tEzs9dljMwwsZjlzimu
 - encryptionKey : dk9f1pd643f9I6e6csucrmqqcwfusxqw
+
+## Firebase
+
+### Xcodeコンソールでバッグを有効化
+1. Xcode で [Product]、[Scheme]、[Edit scheme] の順に選択
+1. 左側のメニューから [Run] を選択
+1. [Arguments] タブを選択
+1. [Arguments Passed On Launch] セクションで -FIRAnalyticsDebugEnabled を追加
+
+### Xcodeコンソールでバッグを無効化
+1. 有効化手順の1-3
+1. -FIRDebugDisabled を追加
+
+### ログレベルの設定
+初期化前に下記のように設定する。
+```
+FirebaseConfiguration.shared.setLoggerLevel(.info)
+FirebaseApp.configure()
+```
