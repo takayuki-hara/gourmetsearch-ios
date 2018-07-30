@@ -55,6 +55,7 @@ PODS:
   - Reveal-SDK (16)
   - SwiftLint (0.26.0)
   - SwiftyBeaver (1.6.0)
+  - SwiftyUserDefaults (3.0.1)
   - Unbox (3.0.0)
   - Wrap (3.0.0)
 
@@ -71,6 +72,7 @@ DEPENDENCIES:
   - Reveal-SDK
   - SwiftLint
   - SwiftyBeaver
+  - SwiftyUserDefaults
   - Unbox
   - Wrap
 
@@ -94,6 +96,7 @@ SPEC REPOS:
     - Reveal-SDK
     - SwiftLint
     - SwiftyBeaver
+    - SwiftyUserDefaults
     - Unbox
     - Wrap
 
@@ -116,9 +119,10 @@ SPEC CHECKSUMS:
   Reveal-SDK: ed36bdbb3cbf90b94ae5da0dbcb3c7ae6738c51f
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
   Wrap: 918fdb5157e4f701f9503b2633752d6f94616f84
 
-PODFILE CHECKSUM: 689a4144886f5176ed112d96cac4b45cbc76ebc3
+PODFILE CHECKSUM: fefaca2cb7b09c22ff1664d6ef835d13e9e12c3e
 
 COCOAPODS: 1.5.3

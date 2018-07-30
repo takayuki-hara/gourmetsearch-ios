@@ -33,9 +33,9 @@ target 'gourmetsearch' do
   # pod 'Kingfisher'
 
   # Database
-  # pod 'KeychainAccess'
-  # pod 'SwiftyUserDefaults'
+   pod 'SwiftyUserDefaults'
   # pod 'RealmSwift'
+  # pod 'KeychainAccess'
 
   # Asynchronous
   # pod 'RxSwift'

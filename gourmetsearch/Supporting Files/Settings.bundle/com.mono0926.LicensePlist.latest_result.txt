@@ -76,6 +76,10 @@ name: SwiftyBeaver, nameSpecified:
 body: The MIT License (MIT…
 version: 1.6.0
 
+name: SwiftyUserDefaults, nameSpecified: 
+body: The MIT License (MIT…
+version: 3.0.1
+
 name: Unbox, nameSpecified: 
 body: The MIT License (MIT…
 version: 3.0.0
