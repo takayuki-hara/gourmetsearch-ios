@@ -38,8 +38,8 @@ target 'gourmetsearch' do
   # pod 'KeychainAccess'
 
   # Asynchronous
-  # pod 'RxSwift'
-  # pod 'RxCocoa'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   # pod 'AsyncSwift'
 
   # UI

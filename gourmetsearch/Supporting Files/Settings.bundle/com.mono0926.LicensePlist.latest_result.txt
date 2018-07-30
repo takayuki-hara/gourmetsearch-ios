@@ -68,6 +68,16 @@ name: Reveal-SDK, nameSpecified:
 body: # REVEAL LICENSE AGR…
 version: 16
 
+name: RxCocoa, nameSpecified: 
+body: **The MIT License**
+…
+version: 4.2.0
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 4.2.0
+
 name: SnapKit, nameSpecified: 
 body: Copyright (c) 2011-P…
 version: 4.0.0

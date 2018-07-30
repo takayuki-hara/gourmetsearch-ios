@@ -53,6 +53,9 @@ PODS:
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - Reveal-SDK (16)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
   - SnapKit (4.0.0)
   - SwiftLint (0.26.0)
   - SwiftyBeaver (1.6.0)
@@ -71,6 +74,8 @@ DEPENDENCIES:
   - Quick
   - R.swift
   - Reveal-SDK
+  - RxCocoa
+  - RxSwift
   - SnapKit
   - SwiftLint
   - SwiftyBeaver
@@ -96,6 +101,8 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - Reveal-SDK
+    - RxCocoa
+    - RxSwift
     - SnapKit
     - SwiftLint
     - SwiftyBeaver
@@ -120,6 +127,8 @@ SPEC CHECKSUMS:
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   Reveal-SDK: ed36bdbb3cbf90b94ae5da0dbcb3c7ae6738c51f
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
@@ -127,6 +136,6 @@ SPEC CHECKSUMS:
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
   Wrap: 918fdb5157e4f701f9503b2633752d6f94616f84
 
-PODFILE CHECKSUM: 5d23b77aa3045866b912d4f39340e3b231b2662b
+PODFILE CHECKSUM: b93c3bef5bdb0f3c8f4407ed58359788cb3d7395
 
 COCOAPODS: 1.5.3
