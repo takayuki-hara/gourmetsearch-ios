@@ -375,6 +375,7 @@
 				4658D2F7210DB51C00C6BA72 /* Sources */,
 				4658D2F8210DB51C00C6BA72 /* Frameworks */,
 				4658D2F9210DB51C00C6BA72 /* Resources */,
+				14E9242F9BEA4E9141C352B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -448,6 +449,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14E9242F9BEA4E9141C352B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		464058E9210EBED5005A4991 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,7 +762,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = gourmetsearchTests/Info.plist;
@@ -754,7 +775,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gourmetsearch.app/gourmetsearch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[dev]gourmetsearch.app/[dev]gourmetsearch";
 			};
 			name = Debug;
 		};
@@ -762,7 +783,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = gourmetsearchTests/Info.plist;
