@@ -1,4 +1,5 @@
 PODS:
+  - BonMot (5.2)
   - Crashlytics (3.10.5):
     - Fabric (~> 1.7.9)
   - Fabric (1.7.9)
@@ -16,6 +17,27 @@ PODS:
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (3.1.1):
     - FirebaseCore (~> 5.0)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
@@ -30,28 +52,47 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - Reveal-SDK (16)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SnapKit (4.0.0)
   - SwiftLint (0.26.0)
   - SwiftyBeaver (1.6.0)
+  - SwiftyUserDefaults (3.0.1)
+  - Unbox (3.0.0)
+  - Wrap (3.0.0)
 
 DEPENDENCIES:
+  - BonMot
   - Crashlytics
   - Fabric
   - Firebase/Core
+  - FontAwesomeKit
   - LicensePlist
   - Nimble
   - Quick
   - R.swift
+  - Reveal-SDK
+  - RxCocoa
+  - RxSwift
+  - SnapKit
   - SwiftLint
   - SwiftyBeaver
+  - SwiftyUserDefaults
+  - Unbox
+  - Wrap
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - BonMot
     - Crashlytics
     - Fabric
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
+    - FontAwesomeKit
     - GoogleToolboxForMac
     - LicensePlist
     - nanopb
@@ -59,16 +100,25 @@ SPEC REPOS:
     - Quick
     - R.swift
     - R.swift.Library
+    - Reveal-SDK
+    - RxCocoa
+    - RxSwift
+    - SnapKit
     - SwiftLint
     - SwiftyBeaver
+    - SwiftyUserDefaults
+    - Unbox
+    - Wrap
 
 SPEC CHECKSUMS:
+  BonMot: 68da0bd7c2f602aca85511bedabd211eb0fae666
   Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
   Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseCore: 4c28e3b9708ba48a765e76515f913a71596eb5dd
   FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   LicensePlist: 3fda61ebe060afc8fc6d995df34a91401af5a244
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
@@ -76,9 +126,16 @@ SPEC CHECKSUMS:
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Reveal-SDK: ed36bdbb3cbf90b94ae5da0dbcb3c7ae6738c51f
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
+  Wrap: 918fdb5157e4f701f9503b2633752d6f94616f84
 
-PODFILE CHECKSUM: 9f0f2a9026fe9c97886c320b1222f1f56006b71c
+PODFILE CHECKSUM: b93c3bef5bdb0f3c8f4407ed58359788cb3d7395
 
 COCOAPODS: 1.5.3

@@ -10,6 +10,7 @@
 		2B9E41B94CAB6D37FE471266 /* Pods_gourmetsearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */; };
 		464058E7210EBD1C005A4991 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */; };
 		464058E8210EBD1C005A4991 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */; };
+		464058EC210EE036005A4991 /* SwiftyUserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */; };
 		4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2EE210DB51A00C6BA72 /* Main.storyboard */; };
 		4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F1210DB51C00C6BA72 /* Assets.xcassets */; };
 		4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 		24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.debug.xcconfig"; sourceTree = "<group>"; };
 		464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
 		464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
+		464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsUtil.swift; sourceTree = "<group>"; };
 		4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[dev]gourmetsearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4658D2EF210DB51A00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4658D2F1210DB51C00C6BA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 				4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		464058EA210EE029005A4991 /* SwiftyUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */,
+			);
+			path = SwiftyUserDefaults;
 			sourceTree = "<group>";
 		};
 		4658D2DE210DB51A00C6BA72 = {
@@ -190,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				4658D328210DCB4200C6BA72 /* SwiftyBeaver */,
+				464058EA210EE029005A4991 /* SwiftyUserDefaults */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -538,16 +549,34 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-16/iOS/RevealServer.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +595,7 @@
 				4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */,
 				4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */,
 				46928B8F210E93FA0059B41F /* R.generated.swift in Sources */,
+				464058EC210EE036005A4991 /* SwiftyUserDefaultsUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

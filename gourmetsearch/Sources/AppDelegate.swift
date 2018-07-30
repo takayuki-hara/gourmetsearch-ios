@@ -24,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseConfiguration.shared.setLoggerLevel(.info)
         FirebaseApp.configure()
 
+        // UserDefaults
+        UserDefaultsUtil.debugPrintAllUserDefaults()
+        UserDefaultsUtil.incrementLaunchCount()
+
         return true
     }
 
