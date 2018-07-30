@@ -13,6 +13,8 @@ target 'gourmetsearch' do
 
   # Firebase
   pod 'Firebase/Core'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'gourmetsearchTests' do
     inherit! :search_paths
