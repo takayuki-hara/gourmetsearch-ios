@@ -29,11 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaultsUtil.incrementLaunchCount()
 
         // Window Setting
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let vc: ViewController = ViewController()
-        self.window!.rootViewController = vc
-        self.window!.backgroundColor = UIColor.white
-        self.window!.makeKeyAndVisible()
+        setWindow()
 
         return true
     }
@@ -53,4 +49,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
     }
 
+    private func setWindow() {
+        // ページを格納する配列
+        var viewControllers: [UIViewController] = []
+
+        // 1ページ目になるViewController
+        let firstVC = SearchViewController() as UIViewController
+        firstVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        viewControllers.append(firstVC)
+
+        // 2ページ目になるViewController
+        let secondVC = MyPageViewController() as UIViewController
+        secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
+        viewControllers.append(secondVC)
+
+        // 3ページ目になるViewController
+        let thirdVC = SearchViewController() as UIViewController
+        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
+        viewControllers.append(thirdVC)
+
+        // ViewControllerをセット
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers(viewControllers, animated: false)
+
+        // rootViewControllerをUITabBarControllerにする
+        window = UIWindow()
+        window?.rootViewController = tabBarController
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
+    }
 }
