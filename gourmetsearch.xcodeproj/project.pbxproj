@@ -450,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# LicensePlist\nif [ $CONFIGURATION = \"Debug\" ]; then\n    ${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Supporting Files/Settings.bundle\"\nfi\n\n# R.Swift\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGET_NAME/Supporting Files\"\n";
+			shellScript = "# LicensePlist\nif [ $CONFIGURATION = \"Debug\" ]; then\n    ${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Supporting Files/Settings.bundle\"\nfi\n\n# R.Swift\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGET_NAME/Supporting Files\"\n\n# SwiftLint\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
