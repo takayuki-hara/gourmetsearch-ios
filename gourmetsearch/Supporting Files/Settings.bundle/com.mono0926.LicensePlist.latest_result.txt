@@ -1,8 +1,34 @@
+name: Firebase, nameSpecified: 
+body: Copyright 2018 Googl…
+version: 5.4.1
+
+name: FirebaseAnalytics, nameSpecified: 
+body: Copyright 2018 Googl…
+version: 5.0.1
+
+name: FirebaseCore, nameSpecified: 
+body: 
+                   …
+version: 5.0.6
+
+name: FirebaseInstanceID, nameSpecified: 
+body: Copyright 2018 Googl…
+version: 3.1.1
+
+name: GoogleToolboxForMac, nameSpecified: 
+body: 
+                   …
+version: 2.1.4
+
 name: LicensePlist, nameSpecified: 
 body: MIT License
 
 Copyrig…
 version: 1.8.3
+
+name: nanopb, nameSpecified: 
+body: Copyright (c) 2011 P…
+version: 0.3.8
 
 name: R.swift, nameSpecified: 
 body: The MIT License (MIT…
