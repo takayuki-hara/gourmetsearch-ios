@@ -20,7 +20,15 @@ class SearchViewController: UIViewController {
         view.addSubview(label)
         label.snp.makeConstraints { make in
             make.center.equalTo(view)
-            make.size.equalTo(CGSize(width: 200, height: 100))
+        }
+        let button = UIButton()
+        button.setTitle("to Result", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.addTarget(self, action: #selector(self.onClick(_:)), for: .touchUpInside)
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
+            make.centerX.equalTo(view)
+            make.centerY.equalTo(view).offset(50)
         }
     }
 
@@ -28,7 +36,12 @@ class SearchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    // for debug
+    @objc private func onClick(_ sender: AnyObject) {
+        let vc = ResultViewController()
+        present(vc, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

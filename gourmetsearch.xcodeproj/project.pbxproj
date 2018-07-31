@@ -20,6 +20,7 @@
 		4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D31B210DC33D00C6BA72 /* AppDelegate.swift */; };
 		4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */; };
 		4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4658D32B210DFD2B00C6BA72 /* Settings.bundle */; };
+		46753719210FF72100E24845 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46753718210FF72100E24845 /* ResultViewController.swift */; };
 		46928B8F210E93FA0059B41F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46928B8E210E93F90059B41F /* R.generated.swift */; };
 		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		4658D31B210DC33D00C6BA72 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverUtil.swift; sourceTree = "<group>"; };
 		4658D32B210DFD2B00C6BA72 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		46753718210FF72100E24845 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		46928B8E210E93F90059B41F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				464058F2210F1796005A4991 /* SearchViewController.swift */,
+				46753718210FF72100E24845 /* ResultViewController.swift */,
 				464058F4210F182D005A4991 /* MyPageViewController.swift */,
 				464058F6210F1837005A4991 /* SettingViewController.swift */,
 			);
@@ -596,6 +599,7 @@
 				464058F3210F1796005A4991 /* SearchViewController.swift in Sources */,
 				4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */,
 				464058F5210F182D005A4991 /* MyPageViewController.swift in Sources */,
+				46753719210FF72100E24845 /* ResultViewController.swift in Sources */,
 				464058F7210F1837005A4991 /* SettingViewController.swift in Sources */,
 				4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */,
 				46928B8F210E93FA0059B41F /* R.generated.swift in Sources */,

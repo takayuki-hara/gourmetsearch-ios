@@ -20,7 +20,6 @@ class MyPageViewController: UIViewController {
         view.addSubview(label)
         label.snp.makeConstraints { make in
             make.center.equalTo(view)
-            make.size.equalTo(CGSize(width: 200, height: 100))
         }
     }
 
