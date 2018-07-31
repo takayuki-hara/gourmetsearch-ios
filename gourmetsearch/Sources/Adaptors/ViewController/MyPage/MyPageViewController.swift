@@ -1,5 +1,5 @@
 //
-//  SettingViewController.swift
+//  MyPageViewController.swift
 //  gourmetsearch
 //
 //  Created by 原隆幸 on 2018/07/30.
@@ -9,14 +9,14 @@
 import UIKit
 import SnapKit
 
-class SettingViewController: UIViewController {
+class MyPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // for debug
         let label = UILabel()
-        label.text = "SettingViewController"
+        label.text = "MyPageViewController"
         view.addSubview(label)
         label.snp.makeConstraints { make in
             make.center.equalTo(view)
@@ -28,15 +28,4 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
