@@ -8,35 +8,60 @@
 
 import UIKit
 import SnapKit
+import XLPagerTabStrip
 
-class ResultViewController: UIViewController {
+class ResultViewController: SegmentedPagerTabStripViewController {
 
+    // MARK: - Properties
+    let scroll = UIScrollView()
+    let segmented = UISegmentedControl()
+
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
+        beforeViewDidLoad()
         super.viewDidLoad()
 
-        // for debug
-        let label = UILabel()
-        label.text = "ResultViewController"
-        view.addSubview(label)
-        label.snp.makeConstraints { make in
-            make.center.equalTo(view)
-        }
+        view.setNeedsUpdateConstraints()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func updateViewConstraints() {
+        setupConstraints()
+        super.updateViewConstraints()
     }
-    */
+
+    // MARK: - Public Methods
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        let firstVC = ResultListViewController()
+        let secondVC = ResultMapViewController()
+        let childViewControllers: [UIViewController] = [firstVC, secondVC]
+        return childViewControllers
+    }
+
+    // MARK: - Private Methods
+    private func beforeViewDidLoad() {
+        // XLPagerTabStrip を使用するためにviewDidLoad()の前に行う処理
+        view.addSubview(segmented)
+        containerView = scroll
+        segmentedControl = segmented
+    }
+
+    private func setupConstraints() {
+        segmentedControl.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.centerX.equalToSuperview()
+            make.size.equalTo(CGSize(width: 300, height: 30))
+        }
+        scroll.snp.makeConstraints { make in
+            make.top.equalTo(segmented.snp.bottom).offset(4)
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+        }
+    }
 
 }

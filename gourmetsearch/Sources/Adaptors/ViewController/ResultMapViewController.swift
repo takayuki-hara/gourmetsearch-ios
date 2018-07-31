@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
 class ResultMapViewController: UIViewController {
 
@@ -20,6 +21,7 @@ class ResultMapViewController: UIViewController {
         label.snp.makeConstraints { make in
             make.center.equalTo(view)
         }
+        view.backgroundColor = UIColor.cyan
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,4 +40,10 @@ class ResultMapViewController: UIViewController {
     }
     */
 
+}
+
+extension ResultMapViewController: IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Map")
+    }
 }
