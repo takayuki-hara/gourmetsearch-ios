@@ -51,26 +51,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setWindow() {
         // ページを格納する配列
-        var viewControllers: [UIViewController] = []
+        var naviControllers: [UIViewController] = []
 
         // 1ページ目になるViewController
         let firstVC = SearchViewController() as UIViewController
         firstVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        viewControllers.append(firstVC)
+        let firstNaviCon = UINavigationController(rootViewController: firstVC)
+        naviControllers.append(firstNaviCon)
 
         // 2ページ目になるViewController
         let secondVC = MyPageViewController() as UIViewController
         secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-        viewControllers.append(secondVC)
+        let secondNaviCon = UINavigationController(rootViewController: secondVC)
+        naviControllers.append(secondNaviCon)
 
         // 3ページ目になるViewController
-        let thirdVC = SearchViewController() as UIViewController
+        let thirdVC = SettingViewController() as UIViewController
         thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
-        viewControllers.append(thirdVC)
+        let thirdNaviCon = UINavigationController(rootViewController: thirdVC)
+        naviControllers.append(thirdNaviCon)
 
         // ViewControllerをセット
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers(viewControllers, animated: false)
+        tabBarController.setViewControllers(naviControllers, animated: false)
 
         // rootViewControllerをUITabBarControllerにする
         window = UIWindow()

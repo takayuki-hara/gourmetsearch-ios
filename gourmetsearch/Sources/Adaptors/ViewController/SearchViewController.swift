@@ -39,8 +39,8 @@ class SearchViewController: UIViewController {
 
     // for debug
     @objc private func onClick(_ sender: AnyObject) {
-        let vc = ResultViewController()
-        present(vc, animated: true, completion: nil)
+        let next = ResultViewController()
+        navigationController?.pushViewController(next, animated: true)
     }
 
     /*
