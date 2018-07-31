@@ -44,7 +44,7 @@ target 'gourmetsearch' do
 
   # UI
   pod 'SnapKit'
-  # pod 'XLPagerTabStrip'
+  pod 'XLPagerTabStrip'
 
   # Other
   # pod 'RNCryptor'

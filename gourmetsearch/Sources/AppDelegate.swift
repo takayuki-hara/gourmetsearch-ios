@@ -28,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaultsUtil.debugPrintAllUserDefaults()
         UserDefaultsUtil.incrementLaunchCount()
 
+        // Window Setting
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = MainTabBarController()
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
+
         return true
     }
 

@@ -10,15 +10,25 @@
 		2B9E41B94CAB6D37FE471266 /* Pods_gourmetsearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */; };
 		464058E7210EBD1C005A4991 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */; };
 		464058E8210EBD1C005A4991 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */; };
-		464058EC210EE036005A4991 /* SwiftyUserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */; };
-		4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2EE210DB51A00C6BA72 /* Main.storyboard */; };
 		4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F1210DB51C00C6BA72 /* Assets.xcassets */; };
 		4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */; };
 		4658D300210DB51C00C6BA72 /* gourmetsearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D2FF210DB51C00C6BA72 /* gourmetsearchTests.swift */; };
-		4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D319210DC33D00C6BA72 /* ViewController.swift */; };
 		4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D31B210DC33D00C6BA72 /* AppDelegate.swift */; };
-		4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */; };
 		4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4658D32B210DFD2B00C6BA72 /* Settings.bundle */; };
+		4675371B2110078B00E24845 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675371A2110078B00E24845 /* MainTabBarController.swift */; };
+		4675372221104A8600E24845 /* SwiftyBeaverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372021104A8600E24845 /* SwiftyBeaverUtil.swift */; };
+		4675372321104A8600E24845 /* SwiftyUserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372121104A8600E24845 /* SwiftyUserDefaultsUtil.swift */; };
+		4675372D21104AF800E24845 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372521104AF800E24845 /* MyPageViewController.swift */; };
+		4675372E21104AF800E24845 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372721104AF800E24845 /* SettingViewController.swift */; };
+		4675372F21104AF800E24845 /* ResultMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372921104AF800E24845 /* ResultMapViewController.swift */; };
+		4675373021104AF800E24845 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372A21104AF800E24845 /* SearchViewController.swift */; };
+		4675373121104AF800E24845 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372B21104AF800E24845 /* ResultViewController.swift */; };
+		4675373221104AF800E24845 /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372C21104AF800E24845 /* ResultListViewController.swift */; };
+		4675373421104BB200E24845 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373321104BB200E24845 /* HistoryViewController.swift */; };
+		4675373621104BBF00E24845 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373521104BBF00E24845 /* FavoriteViewController.swift */; };
+		4675373821104F3100E24845 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373721104F3100E24845 /* DetailViewController.swift */; };
+		4675373A21104F5500E24845 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373921104F5500E24845 /* ContentViewController.swift */; };
+		4675373C211050A600E24845 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373B211050A600E24845 /* Consts.swift */; };
 		46928B8F210E93FA0059B41F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46928B8E210E93F90059B41F /* R.generated.swift */; };
 		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -38,19 +48,29 @@
 		24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.debug.xcconfig"; sourceTree = "<group>"; };
 		464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
 		464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
-		464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsUtil.swift; sourceTree = "<group>"; };
 		4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[dev]gourmetsearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4658D2EF210DB51A00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4658D2F1210DB51C00C6BA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4658D2F4210DB51C00C6BA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4658D2FB210DB51C00C6BA72 /* gourmetsearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gourmetsearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4658D2FF210DB51C00C6BA72 /* gourmetsearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gourmetsearchTests.swift; sourceTree = "<group>"; };
 		4658D301210DB51D00C6BA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4658D30B210DC33D00C6BA72 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4658D319210DC33D00C6BA72 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4658D31B210DC33D00C6BA72 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverUtil.swift; sourceTree = "<group>"; };
 		4658D32B210DFD2B00C6BA72 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4675371A2110078B00E24845 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4675372021104A8600E24845 /* SwiftyBeaverUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverUtil.swift; sourceTree = "<group>"; };
+		4675372121104A8600E24845 /* SwiftyUserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaultsUtil.swift; sourceTree = "<group>"; };
+		4675372521104AF800E24845 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		4675372721104AF800E24845 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4675372921104AF800E24845 /* ResultMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultMapViewController.swift; sourceTree = "<group>"; };
+		4675372A21104AF800E24845 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4675372B21104AF800E24845 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4675372C21104AF800E24845 /* ResultListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
+		4675373321104BB200E24845 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		4675373521104BBF00E24845 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		4675373721104F3100E24845 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4675373921104F5500E24845 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		4675373B211050A600E24845 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46928B8E210E93F90059B41F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,14 +109,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		464058EA210EE029005A4991 /* SwiftyUserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-				464058EB210EE036005A4991 /* SwiftyUserDefaultsUtil.swift */,
-			);
-			path = SwiftyUserDefaults;
-			sourceTree = "<group>";
-		};
 		4658D2DE210DB51A00C6BA72 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +135,6 @@
 				4658D30C210DC33D00C6BA72 /* Sources */,
 				4658D324210DC33D00C6BA72 /* Resources */,
 				4658D30A210DC33D00C6BA72 /* Supporting Files */,
-				4658D2EE210DB51A00C6BA72 /* Main.storyboard */,
 				4658D2F1210DB51C00C6BA72 /* Assets.xcassets */,
 				4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */,
 			);
@@ -199,8 +210,6 @@
 		4658D311210DC33D00C6BA72 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4658D328210DCB4200C6BA72 /* SwiftyBeaver */,
-				464058EA210EE029005A4991 /* SwiftyUserDefaults */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 		4658D312210DC33D00C6BA72 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
+				4675373B211050A600E24845 /* Consts.swift */,
 			);
 			path = Defines;
 			sourceTree = "<group>";
@@ -256,7 +266,10 @@
 		4658D318210DC33D00C6BA72 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4658D319210DC33D00C6BA72 /* ViewController.swift */,
+				4675372821104AF800E24845 /* Search */,
+				4675372421104AF800E24845 /* MyPage */,
+				4675372621104AF800E24845 /* Setting */,
+				4675371A2110078B00E24845 /* MainTabBarController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -312,6 +325,8 @@
 		4658D321210DC33D00C6BA72 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4675372021104A8600E24845 /* SwiftyBeaverUtil.swift */,
+				4675372121104A8600E24845 /* SwiftyUserDefaultsUtil.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -337,12 +352,35 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4658D328210DCB4200C6BA72 /* SwiftyBeaver */ = {
+		4675372421104AF800E24845 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				4658D329210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift */,
+				4675372521104AF800E24845 /* MyPageViewController.swift */,
+				4675373321104BB200E24845 /* HistoryViewController.swift */,
+				4675373521104BBF00E24845 /* FavoriteViewController.swift */,
 			);
-			path = SwiftyBeaver;
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		4675372621104AF800E24845 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4675372721104AF800E24845 /* SettingViewController.swift */,
+				4675373921104F5500E24845 /* ContentViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		4675372821104AF800E24845 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4675372A21104AF800E24845 /* SearchViewController.swift */,
+				4675372B21104AF800E24845 /* ResultViewController.swift */,
+				4675372C21104AF800E24845 /* ResultListViewController.swift */,
+				4675372921104AF800E24845 /* ResultMapViewController.swift */,
+				4675373721104F3100E24845 /* DetailViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		83EC8D2A08A8297A1509D321 /* Frameworks */ = {
@@ -445,7 +483,6 @@
 				4658D32C210DFD2B00C6BA72 /* Settings.bundle in Resources */,
 				4658D2F5210DB51C00C6BA72 /* LaunchScreen.storyboard in Resources */,
 				4658D2F2210DB51C00C6BA72 /* Assets.xcassets in Resources */,
-				4658D2F0210DB51A00C6BA72 /* Main.storyboard in Resources */,
 				464058E8210EBD1C005A4991 /* GoogleService-Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +598,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -577,6 +615,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,10 +631,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */,
-				4658D32A210DCB5A00C6BA72 /* SwiftyBeaverUtil.swift in Sources */,
-				4658D326210DC33D00C6BA72 /* ViewController.swift in Sources */,
+				4675373C211050A600E24845 /* Consts.swift in Sources */,
+				4675372D21104AF800E24845 /* MyPageViewController.swift in Sources */,
+				4675372221104A8600E24845 /* SwiftyBeaverUtil.swift in Sources */,
+				4675373421104BB200E24845 /* HistoryViewController.swift in Sources */,
+				4675373021104AF800E24845 /* SearchViewController.swift in Sources */,
+				4675371B2110078B00E24845 /* MainTabBarController.swift in Sources */,
+				4675373121104AF800E24845 /* ResultViewController.swift in Sources */,
+				4675373221104AF800E24845 /* ResultListViewController.swift in Sources */,
+				4675372F21104AF800E24845 /* ResultMapViewController.swift in Sources */,
+				4675373621104BBF00E24845 /* FavoriteViewController.swift in Sources */,
+				4675373A21104F5500E24845 /* ContentViewController.swift in Sources */,
+				4675372321104A8600E24845 /* SwiftyUserDefaultsUtil.swift in Sources */,
+				4675372E21104AF800E24845 /* SettingViewController.swift in Sources */,
 				46928B8F210E93FA0059B41F /* R.generated.swift in Sources */,
-				464058EC210EE036005A4991 /* SwiftyUserDefaultsUtil.swift in Sources */,
+				4675373821104F3100E24845 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,14 +668,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4658D2EE210DB51A00C6BA72 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4658D2EF210DB51A00C6BA72 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4658D2F3210DB51C00C6BA72 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
