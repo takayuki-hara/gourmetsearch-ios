@@ -62,6 +62,7 @@ PODS:
   - SwiftyUserDefaults (3.0.1)
   - Unbox (3.0.0)
   - Wrap (3.0.0)
+  - XLPagerTabStrip (8.0.1)
 
 DEPENDENCIES:
   - BonMot
@@ -82,6 +83,7 @@ DEPENDENCIES:
   - SwiftyUserDefaults
   - Unbox
   - Wrap
+  - XLPagerTabStrip
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -109,6 +111,7 @@ SPEC REPOS:
     - SwiftyUserDefaults
     - Unbox
     - Wrap
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   BonMot: 68da0bd7c2f602aca85511bedabd211eb0fae666
@@ -135,7 +138,8 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
   Wrap: 918fdb5157e4f701f9503b2633752d6f94616f84
+  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: b93c3bef5bdb0f3c8f4407ed58359788cb3d7395
+PODFILE CHECKSUM: c9124183ce39d87e944882c6a2b2f68f5d7d7a18
 
 COCOAPODS: 1.5.3
