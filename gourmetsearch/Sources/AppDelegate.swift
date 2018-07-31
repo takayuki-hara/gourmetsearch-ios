@@ -29,7 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaultsUtil.incrementLaunchCount()
 
         // Window Setting
-        setWindow()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = MainTabBarController()
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
 
         return true
     }
@@ -49,36 +52,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
     }
 
-    private func setWindow() {
-        // ページを格納する配列
-        var naviControllers: [UIViewController] = []
-
-        // 1ページ目になるViewController
-        let firstVC = SearchViewController() as UIViewController
-        firstVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        let firstNaviCon = UINavigationController(rootViewController: firstVC)
-        naviControllers.append(firstNaviCon)
-
-        // 2ページ目になるViewController
-        let secondVC = MyPageViewController() as UIViewController
-        secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-        let secondNaviCon = UINavigationController(rootViewController: secondVC)
-        naviControllers.append(secondNaviCon)
-
-        // 3ページ目になるViewController
-        let thirdVC = SettingViewController() as UIViewController
-        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
-        let thirdNaviCon = UINavigationController(rootViewController: thirdVC)
-        naviControllers.append(thirdNaviCon)
-
-        // ViewControllerをセット
-        let tabBarController = UITabBarController()
-        tabBarController.setViewControllers(naviControllers, animated: false)
-
-        // rootViewControllerをUITabBarControllerにする
-        window = UIWindow()
-        window?.rootViewController = tabBarController
-        window?.backgroundColor = UIColor.white
-        window?.makeKeyAndVisible()
-    }
 }
