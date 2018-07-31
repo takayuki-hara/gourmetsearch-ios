@@ -26,6 +26,9 @@
 		4675373221104AF800E24845 /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675372C21104AF800E24845 /* ResultListViewController.swift */; };
 		4675373421104BB200E24845 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373321104BB200E24845 /* HistoryViewController.swift */; };
 		4675373621104BBF00E24845 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373521104BBF00E24845 /* FavoriteViewController.swift */; };
+		4675373821104F3100E24845 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373721104F3100E24845 /* DetailViewController.swift */; };
+		4675373A21104F5500E24845 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373921104F5500E24845 /* ContentViewController.swift */; };
+		4675373C211050A600E24845 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373B211050A600E24845 /* Consts.swift */; };
 		46928B8F210E93FA0059B41F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46928B8E210E93F90059B41F /* R.generated.swift */; };
 		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		4675372C21104AF800E24845 /* ResultListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
 		4675373321104BB200E24845 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		4675373521104BBF00E24845 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		4675373721104F3100E24845 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4675373921104F5500E24845 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		4675373B211050A600E24845 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46928B8E210E93F90059B41F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +217,7 @@
 		4658D312210DC33D00C6BA72 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
+				4675373B211050A600E24845 /* Consts.swift */,
 			);
 			path = Defines;
 			sourceTree = "<group>";
@@ -359,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				4675372721104AF800E24845 /* SettingViewController.swift */,
+				4675373921104F5500E24845 /* ContentViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				4675372B21104AF800E24845 /* ResultViewController.swift */,
 				4675372C21104AF800E24845 /* ResultListViewController.swift */,
 				4675372921104AF800E24845 /* ResultMapViewController.swift */,
+				4675373721104F3100E24845 /* DetailViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -622,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4658D327210DC33D00C6BA72 /* AppDelegate.swift in Sources */,
+				4675373C211050A600E24845 /* Consts.swift in Sources */,
 				4675372D21104AF800E24845 /* MyPageViewController.swift in Sources */,
 				4675372221104A8600E24845 /* SwiftyBeaverUtil.swift in Sources */,
 				4675373421104BB200E24845 /* HistoryViewController.swift in Sources */,
@@ -631,9 +641,11 @@
 				4675373221104AF800E24845 /* ResultListViewController.swift in Sources */,
 				4675372F21104AF800E24845 /* ResultMapViewController.swift in Sources */,
 				4675373621104BBF00E24845 /* FavoriteViewController.swift in Sources */,
+				4675373A21104F5500E24845 /* ContentViewController.swift in Sources */,
 				4675372321104A8600E24845 /* SwiftyUserDefaultsUtil.swift in Sources */,
 				4675372E21104AF800E24845 /* SettingViewController.swift in Sources */,
 				46928B8F210E93FA0059B41F /* R.generated.swift in Sources */,
+				4675373821104F3100E24845 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
