@@ -72,6 +72,7 @@
 		4675373921104F5500E24845 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		4675373B211050A600E24845 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46928B8E210E93F90059B41F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		46D4188E21437F41006675DC /* [dev]gourmetsearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "[dev]gourmetsearch.entitlements"; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +154,7 @@
 		4658D30A210DC33D00C6BA72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46D4188E21437F41006675DC /* [dev]gourmetsearch.entitlements */,
 				4658D30B210DC33D00C6BA72 /* Info.plist */,
 				464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */,
 				464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */,
@@ -448,6 +450,11 @@
 				TargetAttributes = {
 					4658D2E6210DB51A00C6BA72 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					4658D2FA210DB51C00C6BA72 = {
 						CreatedOnToolsVersion = 9.3;
@@ -798,6 +805,7 @@
 			baseConfigurationReference = 24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "gourmetsearch/Supporting Files/[dev]gourmetsearch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = LHKFAYMQF2;
@@ -818,6 +826,7 @@
 			baseConfigurationReference = 18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "gourmetsearch/Supporting Files/[dev]gourmetsearch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHKFAYMQF2;
 				INFOPLIST_FILE = "gourmetsearch/Supporting Files/Info.plist";
