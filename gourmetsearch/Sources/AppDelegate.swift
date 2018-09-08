@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import UserNotifications
 import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Firebase
         FirebaseConfiguration.shared.setLoggerLevel(.info)
         FirebaseApp.configure()
+        Messaging.messaging().delegate = self
+        NotificationInitializer.setting()
 
         // UserDefaults
         UserDefaultsUtil.debugPrintAllUserDefaults()
@@ -52,4 +56,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
     }
 
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    // MARK: - UNUserNotificationCenterDelegate
+
+    // フォアグラウンドでプッシュ通知を受け取った際の処理
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
+        log.info("get notification")
+        completionHandler([.alert, .sound])
+    }
+
+}
+
+extension AppDelegate: MessagingDelegate {
+    // MARK: - MessagingDelegate
+
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+
+        // TODO: If necessary send token to application server.
+        // Note: This callback is fired at each app startup and whenever a new token is generated.
+    }
 }
