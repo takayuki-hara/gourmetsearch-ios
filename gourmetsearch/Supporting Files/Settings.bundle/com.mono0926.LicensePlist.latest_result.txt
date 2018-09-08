@@ -27,6 +27,11 @@ name: FirebaseInstanceID, nameSpecified:
 body: Copyright 2018 Googl…
 version: 3.1.1
 
+name: FirebaseMessaging, nameSpecified: 
+body: 
+                   …
+version: 3.0.3
+
 name: FontAwesomeKit, nameSpecified: 
 body: Copyright (C) 2013 P…
 version: 2.2.1
@@ -50,6 +55,10 @@ name: Nimble, nameSpecified:
 body: Apache License
      …
 version: 7.1.3
+
+name: Protobuf, nameSpecified: 
+body: Copyright 2008 Googl…
+version: 3.6.1
 
 name: Quick, nameSpecified: 
 body: Apache License

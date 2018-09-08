@@ -62,6 +62,14 @@
 		</dict>
 		<dict>
 			<key>File</key>
+			<string>com.mono0926.LicensePlist/FirebaseMessaging</string>
+			<key>Title</key>
+			<string>FirebaseMessaging</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
 			<string>com.mono0926.LicensePlist/FontAwesomeKit</string>
 			<key>Title</key>
 			<string>FontAwesomeKit</string>
@@ -97,6 +105,14 @@
 			<string>com.mono0926.LicensePlist/Nimble</string>
 			<key>Title</key>
 			<string>Nimble</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/Protobuf</string>
+			<key>Title</key>
+			<string>Protobuf</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
