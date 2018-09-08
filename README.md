@@ -42,6 +42,41 @@ FirebaseConfiguration.shared.setLoggerLevel(.info)
 FirebaseApp.configure()
 ```
 
+## プッシュ通知
+
+### 概要
+Firebaseを使用し、FCMからのプッシュ通知する仕組みを採用  
+設定方法はFirebaseのドキュメントを参照のこと
+
+### リッチ通知
+Firebaseのコンソールでは対応していないが、FCMをAPI経由で実行することによって実現可能  
+Postmanを使用してAPIを発行する
+|項目|内容|補足|
+|---|---|---|
+|URL|https://fcm.googleapis.com/fcm/send||
+|メソッド|POST||
+|ヘッダー|Authorization　key=AAAAIHLVapg〜（サーバーキー）<br>Content-Type　application/json||
+|ボディ|※欄外に記載||
+
+```json:
+{
+	"to": "<FCM Token>",
+	"mutable_content": true,
+	"data":
+	{
+		"data-url": "<URL>",
+		"data-type": "ファイル名"
+	},
+	"notification":
+	{
+		"click_action": "btnCategory",
+		"title": "プッシュ通知タイトル",
+		"body": "プッシュ通知内容",
+		"sound": "default"
+	}
+}
+```
+
 ## Memo
 
 ### LaunchScreenについて
