@@ -30,7 +30,11 @@
 		4675373A21104F5500E24845 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373921104F5500E24845 /* ContentViewController.swift */; };
 		4675373C211050A600E24845 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675373B211050A600E24845 /* Consts.swift */; };
 		46928B8F210E93FA0059B41F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46928B8E210E93F90059B41F /* R.generated.swift */; };
+		46D418902143888A006675DC /* NotificationInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4188F2143888A006675DC /* NotificationInitializer.swift */; };
+		46D4189821439011006675DC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4189721439011006675DC /* NotificationService.swift */; };
+		46D4189C21439011006675DC /* gourmetsearch nortification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46D4189521439011006675DC /* gourmetsearch nortification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
+		D1BE747B8CB40166CB71465D /* Pods_gourmetsearch_nortification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18C12DF3052F38F09F2FD96 /* Pods_gourmetsearch_nortification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +45,31 @@
 			remoteGlobalIDString = 4658D2E6210DB51A00C6BA72;
 			remoteInfo = gourmetsearch;
 		};
+		46D4189A21439011006675DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4658D2DF210DB51A00C6BA72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D4189421439011006675DC;
+			remoteInfo = "gourmetsearch nortification";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46D418A021439011006675DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46D4189C21439011006675DC /* gourmetsearch nortification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		005C8890074FC0556A8A702C /* Pods-gourmetsearch nortification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch nortification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch nortification/Pods-gourmetsearch nortification.debug.xcconfig"; sourceTree = "<group>"; };
 		18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.release.xcconfig"; sourceTree = "<group>"; };
 		24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.debug.xcconfig"; sourceTree = "<group>"; };
 		464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
@@ -72,10 +98,17 @@
 		4675373921104F5500E24845 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		4675373B211050A600E24845 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46928B8E210E93F90059B41F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		46D4188E21437F41006675DC /* [dev]gourmetsearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "[dev]gourmetsearch.entitlements"; sourceTree = "<group>"; };
+		46D4188F2143888A006675DC /* NotificationInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInitializer.swift; sourceTree = "<group>"; };
+		46D4189521439011006675DC /* gourmetsearch nortification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "gourmetsearch nortification.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4189721439011006675DC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		46D4189921439011006675DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		5191CC155973C142CFE2233F /* Pods-gourmetsearch nortification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch nortification.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch nortification/Pods-gourmetsearch nortification.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F18C12DF3052F38F09F2FD96 /* Pods_gourmetsearch_nortification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch_nortification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +128,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46D4189221439011006675DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1BE747B8CB40166CB71465D /* Pods_gourmetsearch_nortification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -105,6 +146,8 @@
 				18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */,
 				B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */,
 				4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */,
+				005C8890074FC0556A8A702C /* Pods-gourmetsearch nortification.debug.xcconfig */,
+				5191CC155973C142CFE2233F /* Pods-gourmetsearch nortification.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -114,6 +157,7 @@
 			children = (
 				4658D2E9210DB51A00C6BA72 /* gourmetsearch */,
 				4658D2FE210DB51C00C6BA72 /* gourmetsearchTests */,
+				46D4189621439011006675DC /* gourmetsearch nortification */,
 				4658D2E8210DB51A00C6BA72 /* Products */,
 				0F224F903FA01E1A748F7865 /* Pods */,
 				83EC8D2A08A8297A1509D321 /* Frameworks */,
@@ -125,6 +169,7 @@
 			children = (
 				4658D2E7210DB51A00C6BA72 /* [dev]gourmetsearch.app */,
 				4658D2FB210DB51C00C6BA72 /* gourmetsearchTests.xctest */,
+				46D4189521439011006675DC /* gourmetsearch nortification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +198,7 @@
 		4658D30A210DC33D00C6BA72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46D4188E21437F41006675DC /* [dev]gourmetsearch.entitlements */,
 				4658D30B210DC33D00C6BA72 /* Info.plist */,
 				464058E6210EBD1B005A4991 /* GoogleService-Info-Debug.plist */,
 				464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */,
@@ -327,6 +373,7 @@
 			children = (
 				4675372021104A8600E24845 /* SwiftyBeaverUtil.swift */,
 				4675372121104A8600E24845 /* SwiftyUserDefaultsUtil.swift */,
+				46D4188F2143888A006675DC /* NotificationInitializer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -383,11 +430,21 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		46D4189621439011006675DC /* gourmetsearch nortification */ = {
+			isa = PBXGroup;
+			children = (
+				46D4189721439011006675DC /* NotificationService.swift */,
+				46D4189921439011006675DC /* Info.plist */,
+			);
+			path = "gourmetsearch nortification";
+			sourceTree = "<group>";
+		};
 		83EC8D2A08A8297A1509D321 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */,
 				A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */,
+				F18C12DF3052F38F09F2FD96 /* Pods_gourmetsearch_nortification.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -406,10 +463,12 @@
 				4658D2E5210DB51A00C6BA72 /* Resources */,
 				E6A73EED9959D4BA362AFF44 /* [CP] Embed Pods Frameworks */,
 				464058E9210EBED5005A4991 /* ShellScript */,
+				46D418A021439011006675DC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46D4189B21439011006675DC /* PBXTargetDependency */,
 			);
 			name = gourmetsearch;
 			productName = gourmetsearch;
@@ -436,6 +495,24 @@
 			productReference = 4658D2FB210DB51C00C6BA72 /* gourmetsearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		46D4189421439011006675DC /* gourmetsearch nortification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D4189D21439011006675DC /* Build configuration list for PBXNativeTarget "gourmetsearch nortification" */;
+			buildPhases = (
+				A738BFE4B4A14EE4DCEB0110 /* [CP] Check Pods Manifest.lock */,
+				46D4189121439011006675DC /* Sources */,
+				46D4189221439011006675DC /* Frameworks */,
+				46D4189321439011006675DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gourmetsearch nortification";
+			productName = "gourmetsearch nortification";
+			productReference = 46D4189521439011006675DC /* gourmetsearch nortification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -448,10 +525,18 @@
 				TargetAttributes = {
 					4658D2E6210DB51A00C6BA72 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					4658D2FA210DB51C00C6BA72 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 4658D2E6210DB51A00C6BA72;
+					};
+					46D4189421439011006675DC = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -470,6 +555,7 @@
 			targets = (
 				4658D2E6210DB51A00C6BA72 /* gourmetsearch */,
 				4658D2FA210DB51C00C6BA72 /* gourmetsearchTests */,
+				46D4189421439011006675DC /* gourmetsearch nortification */,
 			);
 		};
 /* End PBXProject section */
@@ -488,6 +574,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4658D2F9210DB51C00C6BA72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4189321439011006675DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -543,6 +636,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# LicensePlist\nif [ $CONFIGURATION = \"Debug\" ]; then\n    ${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Supporting Files/Settings.bundle\"\nfi\n\n# R.Swift\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGET_NAME/Supporting Files\"\n\n# SwiftLint\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n# Firebase\nif [ $CONFIGURATION = \"Release\" ]; then\n    cp -f \"$SRCROOT/$TARGET_NAME/Supporting Files/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n    cp -f \"$SRCROOT/$TARGET_NAME/Supporting Files/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
 		};
+		A738BFE4B4A14EE4DCEB0110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gourmetsearch nortification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,6 +700,7 @@
 				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-16/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -600,12 +712,14 @@
 				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -617,6 +731,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -646,6 +761,7 @@
 				4675372E21104AF800E24845 /* SettingViewController.swift in Sources */,
 				46928B8F210E93FA0059B41F /* R.generated.swift in Sources */,
 				4675373821104F3100E24845 /* DetailViewController.swift in Sources */,
+				46D418902143888A006675DC /* NotificationInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +773,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46D4189121439011006675DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4189821439011006675DC /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -664,6 +788,11 @@
 			isa = PBXTargetDependency;
 			target = 4658D2E6210DB51A00C6BA72 /* gourmetsearch */;
 			targetProxy = 4658D2FC210DB51C00C6BA72 /* PBXContainerItemProxy */;
+		};
+		46D4189B21439011006675DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D4189421439011006675DC /* gourmetsearch nortification */;
+			targetProxy = 46D4189A21439011006675DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -797,9 +926,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "gourmetsearch/Supporting Files/[dev]gourmetsearch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LHKFAYMQF2;
 				INFOPLIST_FILE = "gourmetsearch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -816,8 +948,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "gourmetsearch/Supporting Files/[dev]gourmetsearch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHKFAYMQF2;
 				INFOPLIST_FILE = "gourmetsearch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -872,6 +1007,46 @@
 			};
 			name = Release;
 		};
+		46D4189E21439011006675DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005C8890074FC0556A8A702C /* Pods-gourmetsearch nortification.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHKFAYMQF2;
+				INFOPLIST_FILE = "gourmetsearch nortification/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearch.dev.nortification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46D4189F21439011006675DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5191CC155973C142CFE2233F /* Pods-gourmetsearch nortification.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHKFAYMQF2;
+				INFOPLIST_FILE = "gourmetsearch nortification/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.penguin.gourmetsearch.dev.nortification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -898,6 +1073,15 @@
 			buildConfigurations = (
 				4658D308210DB51D00C6BA72 /* Debug */,
 				4658D309210DB51D00C6BA72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D4189D21439011006675DC /* Build configuration list for PBXNativeTarget "gourmetsearch nortification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D4189E21439011006675DC /* Debug */,
+				46D4189F21439011006675DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
