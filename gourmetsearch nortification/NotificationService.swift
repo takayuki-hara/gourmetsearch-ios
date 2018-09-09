@@ -32,7 +32,7 @@ class NotificationService: UNNotificationServiceExtension {
 
         // URLが正しくない、あるいはローカルファイルの場合(i.e., file://movie.mp4)
         guard let mediaUrl = URL(string: mediaUrlString), !mediaUrl.isFileURL else {
-            modifyContentWithLocalFile(mediaUrlString: mediaUrlString)
+            self.modifyContentAltText()
             contentHandler(modifiedNotificationContent!)
             return
         }
@@ -48,15 +48,12 @@ class NotificationService: UNNotificationServiceExtension {
                     self.modifiedNotificationContent?.attachments = [mediaAttachment!]
                     useAlternateText = false
                 }
-            } else {
-                self.modifiedNotificationContent?.body = "dl error5"
             }
         }
 
         // メディアが取得できなかったので代替テキストを設定する
         if (useAlternateText == true) {
-            //self.modifyContentAltText()
-            self.modifiedNotificationContent?.body = "dl error"
+            self.modifyContentAltText()
         }
 
         self.contentHandler?((self.modifiedNotificationContent)!)
@@ -77,42 +74,8 @@ class NotificationService: UNNotificationServiceExtension {
 
     override func serviceExtensionTimeWillExpire() {
         // Extensionの処理は時間的な制約があり打ち切られる前にここが呼ばれる
-        //modifyContentAltText()
-        modifiedNotificationContent?.body = "expire"
+        modifyContentAltText()
         contentHandler?(modifiedNotificationContent!)
-    }
-
-    private func modifyContentWithLocalFile(mediaUrlString: String) {
-        // attempt to create a URL to a file in local storage
-        var useAlternateText: Bool = true
-        if !mediaUrlString.isEmpty {
-            let mediaUrlFilename:NSString = mediaUrlString as NSString
-            let fileName = (mediaUrlFilename.lastPathComponent as NSString).deletingPathExtension
-            let fileExtension = (mediaUrlFilename.lastPathComponent as NSString).pathExtension
-
-            // is it in the bundle?
-            if let localMediaUrlPath = Bundle.main.path(forResource: fileName, ofType: fileExtension) {
-                // is the URL a local file URL?
-                let localMediaUrl = URL.init(fileURLWithPath: localMediaUrlPath)
-                if localMediaUrl.isFileURL {
-                    // create an attachment with the local media
-                    let mediaAttachment: UNNotificationAttachment? = createMediaAttachment(localMediaUrl)
-
-                    // if no problems creating the attachment, we can use it
-                    if mediaAttachment != nil {
-                        // set the media to display in the notification
-                        modifiedNotificationContent?.attachments = [mediaAttachment!]
-
-                        // everything is ok
-                        useAlternateText = false
-                    }
-                }
-            }
-        }
-
-        if (useAlternateText == true) {
-            modifyContentAltText()
-        }
     }
 
     private func modifyContentAltText() {
