@@ -8,6 +8,7 @@
 
 import CoreGraphics
 import UserNotifications
+import Alamofire
 
 class NotificationService: UNNotificationServiceExtension {
     var contentHandler: ((_ contentToDeliver: UNNotificationContent) -> Void)? = nil
@@ -23,63 +24,61 @@ class NotificationService: UNNotificationServiceExtension {
         self.contentHandler = contentHandler
         modifiedNotificationContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
 
+        // 画像が含まれていない場合はそのまま返す
         guard let mediaUrlString = request.content.userInfo["image_url"] as? String else {
             contentHandler(request.content)
             return
         }
 
-        // see if the media URL is for a local file  (i.e., file://movie.mp4)
+        // URLが正しくない、あるいはローカルファイルの場合(i.e., file://movie.mp4)
         guard let mediaUrl = URL(string: mediaUrlString), !mediaUrl.isFileURL else {
             modifyContentWithLocalFile(mediaUrlString: mediaUrlString)
             contentHandler(modifiedNotificationContent!)
             return
         }
 
-        // if we have a URL, try to download media (i.e., https://media.giphy.com/media/3oz8xJBbCpzG9byZmU/giphy.gif)
-        // create a session to handle downloading of the URL
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-
-        // start a download task to handle the download of the media
-        weak var weakSelf: NotificationService? = self
-        session.downloadTask(with: mediaUrl, completionHandler: {(_ location: URL?, _ response: URLResponse?, _ error: Error?) -> Void in
-            var useAlternateText: Bool = true
-            // if the download succeeded, save it locally and then make an attachment
-            if error == nil {
-                let downloadResponse = response as! HTTPURLResponse
-                if (downloadResponse.statusCode >= 200 && downloadResponse.statusCode <= 299) {
-                    // download was successful, attempt save the media file
-                    let localMediaUrl = URL.init(fileURLWithPath: location!.path + mediaUrl.lastPathComponent)
-
-                    // remove any existing file with the same name
-                    try? FileManager.default.removeItem(at: localMediaUrl)
-
-                    // move the downloaded file from the temporary location to a new file
-                    if ((try? FileManager.default.moveItem(at: location!, to: localMediaUrl)) != nil) {
-                        // create an attachment with the new file
-                        let mediaAttachment: UNNotificationAttachment? = weakSelf?.createMediaAttachment(localMediaUrl)
-
-                        // if no problems creating the attachment, we can use it
-                        if mediaAttachment != nil {
-                            // set the media to display in the notification
-                            weakSelf?.modifiedNotificationContent?.attachments = [mediaAttachment!]
-
-                            // everything is ok
-                            useAlternateText = false
-                        }
-                    }
+        // メディアをダウンロード
+        var useAlternateText: Bool = true
+        if let location = fetchMediaFile(url: mediaUrl) {
+            let localMediaUrl = URL.init(fileURLWithPath: location.path + mediaUrl.lastPathComponent)
+            try? FileManager.default.removeItem(at: localMediaUrl)
+            if (try? FileManager.default.moveItem(at: location, to: localMediaUrl)) != nil {
+                let mediaAttachment: UNNotificationAttachment? = self.createMediaAttachment(localMediaUrl)
+                if mediaAttachment != nil {
+                    self.modifiedNotificationContent?.attachments = [mediaAttachment!]
+                    useAlternateText = false
                 }
+            } else {
+                self.modifiedNotificationContent?.body = "dl error5"
             }
+        }
 
-            if (useAlternateText == true) {
-                self.modifyContentAltText()
-            }
-            weakSelf?.contentHandler?((weakSelf?.modifiedNotificationContent)!)
-        }).resume()
+        // メディアが取得できなかったので代替テキストを設定する
+        if (useAlternateText == true) {
+            //self.modifyContentAltText()
+            self.modifiedNotificationContent?.body = "dl error"
+        }
+
+        self.contentHandler?((self.modifiedNotificationContent)!)
+    }
+
+    private func fetchMediaFile(url: URL) -> URL? {
+        // 非同期にした場合にダウンロードしたファイルが読めなかったので同期処理にする（呼び出し元自体がメインスレッドではない）
+        let semaphore = DispatchSemaphore(value: 0)
+        let queue = DispatchQueue.global(qos: .utility)
+        var location: URL? = nil
+        Alamofire.download(url).response(queue: queue) { response in
+            location = response.temporaryURL
+            semaphore.signal()
+        }
+        semaphore.wait()
+        return location
     }
 
     override func serviceExtensionTimeWillExpire() {
         // Extensionの処理は時間的な制約があり打ち切られる前にここが呼ばれる
-        modifyContentAltText()
+        //modifyContentAltText()
+        modifiedNotificationContent?.body = "expire"
         contentHandler?(modifiedNotificationContent!)
     }
 
