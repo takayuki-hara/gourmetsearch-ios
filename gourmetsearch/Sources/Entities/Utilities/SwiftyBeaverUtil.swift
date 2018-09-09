@@ -26,9 +26,9 @@ class SwiftyBeaverUtil {
         // destinations
         let console = ConsoleDestination()
         let file = FileDestination()
-        let cloud = SBPlatformDestination(appID: "v6gbNz",
-                                      appSecret: "pZsdmelj5nis5tEzs9dljMwwsZjlzimu",
-                                  encryptionKey: "dk9f1pd643f9I6e6csucrmqqcwfusxqw")
+        let cloud = SBPlatformDestination(appID: "JXQlm7",
+                                      appSecret: "o7fnxUunwZmib1rleIzhStofdvnewekt",
+                                  encryptionKey: "myslSnwaWqMeLvGUPqpxuZjt6zuvjykx")
 
         // setup file path
         createLogFile()
