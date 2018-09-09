@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.3)
   - BonMot (5.2)
   - Crashlytics (3.10.5):
     - Fabric (~> 1.7.9)
@@ -76,6 +77,7 @@ PODS:
   - XLPagerTabStrip (8.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - BonMot
   - Crashlytics
   - Fabric
@@ -99,6 +101,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - BonMot
     - Crashlytics
     - Fabric
@@ -128,6 +131,7 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   BonMot: 68da0bd7c2f602aca85511bedabd211eb0fae666
   Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
   Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
@@ -156,6 +160,6 @@ SPEC CHECKSUMS:
   Wrap: 918fdb5157e4f701f9503b2633752d6f94616f84
   XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: 9d3cd4a9f2a0a0407973237504cadc352dd5a347
+PODFILE CHECKSUM: efd6e7702a9275ca950ae6c7c53023094de94c98
 
 COCOAPODS: 1.5.3

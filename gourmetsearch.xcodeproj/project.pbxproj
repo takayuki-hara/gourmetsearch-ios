@@ -34,6 +34,7 @@
 		46D4189821439011006675DC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4189721439011006675DC /* NotificationService.swift */; };
 		46D4189C21439011006675DC /* gourmetsearch nortification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46D4189521439011006675DC /* gourmetsearch nortification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C01AA70123E4105E4D181A3F /* Pods_gourmetsearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */; };
+		D1BE747B8CB40166CB71465D /* Pods_gourmetsearch_nortification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18C12DF3052F38F09F2FD96 /* Pods_gourmetsearch_nortification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		005C8890074FC0556A8A702C /* Pods-gourmetsearch nortification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch nortification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch nortification/Pods-gourmetsearch nortification.debug.xcconfig"; sourceTree = "<group>"; };
 		18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.release.xcconfig"; sourceTree = "<group>"; };
 		24DD0A18F4CBF3A41CCAF17F /* Pods-gourmetsearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch/Pods-gourmetsearch.debug.xcconfig"; sourceTree = "<group>"; };
 		464058E5210EBD1B005A4991 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
@@ -102,9 +104,11 @@
 		46D4189721439011006675DC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		46D4189921439011006675DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		5191CC155973C142CFE2233F /* Pods-gourmetsearch nortification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearch nortification.release.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearch nortification/Pods-gourmetsearch nortification.release.xcconfig"; sourceTree = "<group>"; };
 		A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gourmetsearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gourmetsearchTests/Pods-gourmetsearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F18C12DF3052F38F09F2FD96 /* Pods_gourmetsearch_nortification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gourmetsearch_nortification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BE747B8CB40166CB71465D /* Pods_gourmetsearch_nortification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +146,8 @@
 				18E68F3351BF7204755906DF /* Pods-gourmetsearch.release.xcconfig */,
 				B5FDE91825E7B6F77922CBA3 /* Pods-gourmetsearchTests.debug.xcconfig */,
 				4795F3B40F0A760628F64D55 /* Pods-gourmetsearchTests.release.xcconfig */,
+				005C8890074FC0556A8A702C /* Pods-gourmetsearch nortification.debug.xcconfig */,
+				5191CC155973C142CFE2233F /* Pods-gourmetsearch nortification.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -437,6 +444,7 @@
 			children = (
 				A15D9C098A3654F4AA24E86E /* Pods_gourmetsearch.framework */,
 				A53A1635EB646AD27B2E598F /* Pods_gourmetsearchTests.framework */,
+				F18C12DF3052F38F09F2FD96 /* Pods_gourmetsearch_nortification.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -491,6 +499,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46D4189D21439011006675DC /* Build configuration list for PBXNativeTarget "gourmetsearch nortification" */;
 			buildPhases = (
+				A738BFE4B4A14EE4DCEB0110 /* [CP] Check Pods Manifest.lock */,
 				46D4189121439011006675DC /* Sources */,
 				46D4189221439011006675DC /* Frameworks */,
 				46D4189321439011006675DC /* Resources */,
@@ -627,6 +636,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# LicensePlist\nif [ $CONFIGURATION = \"Debug\" ]; then\n    ${PODS_ROOT}/LicensePlist/license-plist --output-path \"$TARGET_NAME/Supporting Files/Settings.bundle\"\nfi\n\n# R.Swift\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGET_NAME/Supporting Files\"\n\n# SwiftLint\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n# Firebase\nif [ $CONFIGURATION = \"Release\" ]; then\n    cp -f \"$SRCROOT/$TARGET_NAME/Supporting Files/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n    cp -f \"$SRCROOT/$TARGET_NAME/Supporting Files/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
 		};
+		A738BFE4B4A14EE4DCEB0110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gourmetsearch nortification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C81D1150C8B1B7C417418645 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -685,6 +712,7 @@
 				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -703,6 +731,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -980,6 +1009,7 @@
 		};
 		46D4189E21439011006675DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005C8890074FC0556A8A702C /* Pods-gourmetsearch nortification.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHKFAYMQF2;
@@ -999,6 +1029,7 @@
 		};
 		46D4189F21439011006675DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5191CC155973C142CFE2233F /* Pods-gourmetsearch nortification.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHKFAYMQF2;
